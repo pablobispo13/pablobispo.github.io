@@ -71,7 +71,7 @@ body {
    .buttons{
     position: fixed;
    }
-   .operators div {  
+   .operadores div {  
      
     display: inline-block;  
     border: 1px solid var(--cor-sombra);  
@@ -97,7 +97,7 @@ body {
    .leftPanel {  
     display: inline-block;  
    }  
-   .numbers div {  
+   .numeros div {  
     display: inline-block;  
     border: 1px solid var(--cor-sombra);  
     color: var(--cor-font);
@@ -110,16 +110,16 @@ body {
     background-color: var(--cor-item);  
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;  
    }  
-   .numbers div:hover {  
+   .numeros div:hover {  
     background-color: var(--cor-item);  
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);  
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);  
     border-color: var(--cor-font);  
    }  
-   .numbers div:active {  
+   .numeros div:active {  
     font-weight: bold;  
    }  
-   div.equal {  
+   div.igual {  
     display: inline-block;  
     height: 27px;
     border: 1px solid var(--cor-sombra);  
@@ -134,12 +134,12 @@ body {
     background-color: var( --cor-botão);  
     transition: all .2s ease-in-out;  
    }  
-   div.equal:hover {  
+   div.igual:hover {  
     background-color: var( --cor-botão-hover);  
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);  
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);  
     border-color:  var(--cor-font);  
    }  
-   div.equal:active {  
+   div.igual:active {  
     font-weight: bold;  
    }  
