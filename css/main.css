@@ -1183,7 +1183,7 @@ dd {
   background-color: var( --primary-color);
 }
 
-.masonry-wrap {
+.projetos-wrap {
   width: 89%;
   max-width: 1400px;
   margin-top: 11.2rem;
@@ -1191,12 +1191,12 @@ dd {
   margin-left: auto;
 }
 
-.masonry .grid-sizer,
-.masonry__brick {
+.projetos .grid-sizer,
+.projeto__itens {
   width: 50%;
 }
 
-.masonry__brick {
+.projeto__itens {
   float: left;
   padding: 0 30px;
   margin-bottom: 60px;
@@ -1205,6 +1205,7 @@ dd {
 .item-folio {
   text-align: center;
   padding: 60px;
+  height: 596.8px;
   background-color: var(--item-folio-bg-color);
   transition: all 0.5s ease-in-out;
 }
@@ -1218,6 +1219,8 @@ dd {
 
 .item-folio__thumb .thumb-link {
   display: block;
+  width: 500px;
+  height: 315px;
   position: relative;
 }
 
@@ -1333,7 +1336,7 @@ dd {
  * works
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
-  .masonry__brick {
+  .projeto__itens {
     padding: 0 24px;
     margin-bottom: 48px;
   }
@@ -1360,7 +1363,7 @@ dd {
 }
 
 @media screen and (max-width:1024px) {
-  .masonry__brick {
+  .projeto__itens {
     padding: 0 20px;
     margin-bottom: 40px;
   }
@@ -1372,7 +1375,7 @@ dd {
 }
 
 @media screen and (max-width:900px) {
-  .masonry__brick {
+  .projeto__itens {
     padding: 0 16px;
     margin-bottom: 32px;
   }
@@ -1388,16 +1391,16 @@ dd {
     padding-top: 16rem;
   }
 
-  .masonry-wrap {
+  .projetos-wrap {
     margin-top: 7.2rem;
   }
 
-  .masonry .grid-sizer,
-  .masonry__brick {
+  .projetos .grid-sizer,
+  .projeto__itens {
     width: 100%;
   }
 
-  .masonry__brick {
+  .projeto__itens {
     float: none;
     margin-bottom: 60px;
   }
@@ -1424,13 +1427,13 @@ dd {
 }
 
 @media screen and (max-width:600px) {
-  .masonry-wrap {
+  .projetos-wrap {
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
   }
 
-  .masonry__brick {
+  .projeto__itens {
     padding: 0 10px;
     margin-bottom: 44px;
   }
@@ -1453,14 +1456,14 @@ dd {
 }
 
 @media screen and (max-width:500px) {
-  .masonry__brick {
+  .projeto__itens {
     margin-bottom: 3.6rem;
   }
 
 }
 
 @media screen and (max-width:400px) {
-  .masonry__brick {
+  .projeto__itens {
     padding: 0;
     margin-bottom: 3.2rem;
   }
