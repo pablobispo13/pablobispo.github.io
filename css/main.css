@@ -1808,3 +1808,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid var(--link-color);  /* creates padding around scroll thumb */
 }
+.cv {
+  font-family: monospace!important;
+}
