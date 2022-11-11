@@ -9,17 +9,25 @@ for (var i = 0; i < numeros.length; i++) {
 numeros[i].addEventListener("click", function(e) {
   var currentString = input.innerHTML;
   var lastChar = currentString[currentString.length - 1];
-  if (resultadoTela === false) {
-    input.innerHTML += e.target.innerHTML;
-  } else if (resultadoTela === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") {
-    resultadoTela = false;
-    input.innerHTML += e.target.innerHTML;
-  } else {
-    resultadoTela = false;
-    input.innerHTML = "";
-    input.innerHTML += e.target.innerHTML;
+  var erro = false;
+  if(e.target.innerHTML == '.'){
+    if(currentString=='' || currentString=='.'){
+        Swal.fire('Coloque um numero antes do ponto')
+        erro=true;
+        document.getElementById('limpar').click();
+    }
   }
-
+  if(erro == false){
+    if (resultadoTela === false) {
+      input.innerHTML += e.target.innerHTML;
+    } else if (resultadoTela === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") {
+      resultadoTela = false;
+      input.innerHTML += e.target.innerHTML;
+    } else {
+      resultadoTela = false;
+      input.innerHTML += e.target.innerHTML;
+    }
+  }
 });
 }
 
@@ -31,7 +39,7 @@ if (lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "�
     var newString = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
     input.innerHTML = newString;
   } else if (currentString.length == 0) {
-      console.log("enter a numeros first");
+    Swal.fire('Insira um numero primeiro')
   } else {
        input.innerHTML += e.target.innerHTML;
   }
