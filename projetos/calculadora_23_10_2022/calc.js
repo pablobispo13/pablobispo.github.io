@@ -11,13 +11,18 @@ numeros[i].addEventListener("click", function(e) {
   var lastChar = currentString[currentString.length - 1];
   var erro = false;
   if(e.target.innerHTML == '.'){
-    if(currentString=='' || currentString=='.'){
+    if(currentString=='' || currentString=='.' || lastChar == '.' ){
         Swal.fire('Coloque um numero antes do ponto')
         erro=true;
-        document.getElementById('limpar').click();
+    }
+    else if(currentString.indexOf(".")>1){
+      Swal.fire('Não se pode colocar mais de um ponto!')
+      erro=true;
     }
   }
+
   if(erro == false){
+    
     if (resultadoTela === false) {
       input.innerHTML += e.target.innerHTML;
     } else if (resultadoTela === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") {
